@@ -1,23 +1,451 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accessible Archipelago - Your gateway to unforgettable boat trips. Explore the beauty with us!">
-    <title>Accessible Archipelago</title>
+    <meta name="description" content="Accessible Archipelago — Saavutettavat saaristoretket Turun saaristossa. Erityisryhmien retket ja valokuvausretket.">
+    <meta property="og:title" content="Accessible Archipelago — Turun saaristoretket">
+    <meta property="og:description" content="Saavutettavat veneretket Turun saaristossa. Erityisryhmien retket ja valokuvausretket.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <meta property="og:locale:alternate" content="en_US">
+    <title>Accessible Archipelago — Turun saaristoretket</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Accessible Archipelago</h1>
+
+    <!-- Skip navigation -->
+    <a href="#main-content" class="skip-link" data-fi="Siirry sisältöön" data-en="Skip to content">Siirry sisältöön</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="#" class="logo-link" aria-label="Accessible Archipelago — Etusivu">
+                <img src="kuvat/logo.png" alt="Accessible Archipelago — logo: vene ramppeineen auringonlaskun saaristomaisemassa" class="logo" width="80" height="80">
+            </a>
+            <nav aria-label="Päänavigaatio" class="main-nav" id="main-nav">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Avaa valikko" data-fi-label="Avaa valikko" data-en-label="Open menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul id="nav-list" class="nav-list" role="list">
+                    <li><a href="#about" data-fi="Tietoa meistä" data-en="About Us">Tietoa meistä</a></li>
+                    <li><a href="#special-tours" data-fi="Erityisryhmien retket" data-en="Accessible Tours">Erityisryhmien retket</a></li>
+                    <li><a href="#photo-tours" data-fi="Valokuvausretket" data-en="Photography Tours">Valokuvausretket</a></li>
+                    <li><a href="#contact" data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+            <button class="lang-toggle" aria-label="Switch to English" aria-live="polite" id="lang-toggle">
+                <span class="lang-option" data-lang="fi" aria-current="true">FI</span>
+                <span class="lang-separator" aria-hidden="true">|</span>
+                <span class="lang-option" data-lang="en">EN</span>
+            </button>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Welcome to Accessible Archipelago</h2>
-            <p>Experience the beauty of the archipelago with our premium boat trips.</p>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-content">
+            <img src="kuvat/logo.png" alt="" class="hero-logo" width="200" height="200" aria-hidden="true">
+            <h1 id="hero-heading">Accessible Archipelago</h1>
+            <p class="hero-tagline" data-fi="Saavutettavat saaristoretket Turun saaristossa" data-en="Accessible boat tours in the Turku Archipelago">Saavutettavat saaristoretket Turun saaristossa</p>
+            <p class="hero-subtitle" data-fi="Erityisryhmien retket &amp; valokuvausretket — kaikille avoin saaristo" data-en="Accessible tours &amp; photography tours — the archipelago for everyone">Erityisryhmien retket &amp; valokuvausretket — kaikille avoin saaristo</p>
+            <a href="#contact" class="cta-button" data-fi="Ota yhteyttä" data-en="Get in touch">Ota yhteyttä</a>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <!-- About -->
+        <section id="about" class="section section--cream" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" data-fi="Tietoa meistä" data-en="About Us">Tietoa meistä</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-fi="Accessible Archipelago tarjoaa saavutettavia veneretkiä Turun upeassa saaristossa. Venellämme on ramppi, joka mahdollistaa helpon pääsyn kaikille — myös pyörätuolin käyttäjille ja liikuntarajoitteisille." data-en="Accessible Archipelago offers accessible boat tours in the stunning Turku Archipelago. Our boat features a ramp that provides easy access for everyone — including wheelchair users and people with mobility challenges.">Accessible Archipelago tarjoaa saavutettavia veneretkiä Turun upeassa saaristossa. Venellämme on ramppi, joka mahdollistaa helpon pääsyn kaikille — myös pyörätuolin käyttäjille ja liikuntarajoitteisille.</p>
+                        <p data-fi="Vene tulee sinne, minne sinä haluat. Suunnittelemme reitin yhdessä toiveidesi mukaan. Saaristomme tarjoaa ainutlaatuisia luontokokemuksia, hiljaisia lahtia ja henkeäsalpaavia maisemia." data-en="The boat comes to you — wherever you want. We plan the route together based on your wishes. Our archipelago offers unique nature experiences, tranquil bays, and breathtaking scenery.">Vene tulee sinne, minne sinä haluat. Suunnittelemme reitin yhdessä toiveidesi mukaan. Saaristomme tarjoaa ainutlaatuisia luontokokemuksia, hiljaisia lahtia ja henkeäsalpaavia maisemia.</p>
+                    </div>
+                    <div class="about-gallery">
+                        <figure class="image-placeholder">
+                            <img src="kuvat/saaristo.jpg" alt="Turun saariston maisema" loading="lazy">
+                            <figcaption data-fi="Turun saaristo" data-en="Turku Archipelago">Turun saaristo</figcaption>
+                        </figure>
+                        <figure class="image-placeholder">
+                            <img src="kuvat/vene-ramppi.jpg" alt="Faster 545 SCA -vene ramppi avoinna laiturissa" loading="lazy">
+                            <figcaption data-fi="Veneemme" data-en="Our boat">Veneemme</figcaption>
+                        </figure>
+                        <figure class="image-placeholder">
+                            <img src="kuvat/esteetoen-paasy.jpg" alt="Esteetön pääsy veneeseen hydraulisen rampin avulla" loading="lazy">
+                            <figcaption data-fi="Esteetön pääsy" data-en="Accessible boarding">Esteetön pääsy</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Special Needs Tours -->
+        <section id="special-tours" class="section section--white" aria-labelledby="special-heading">
+            <div class="container">
+                <h2 id="special-heading" data-fi="Erityisryhmien retket" data-en="Accessible Tours">Erityisryhmien retket</h2>
+                <p class="section-intro" data-fi="Tarjoamme räätälöityjä veneretkiä erityisryhmille. Venellämme on hydraulinen ramppi, joka tekee veneeseen nousemisesta ja poistumisesta helppoa ja turvallista kaikille." data-en="We offer tailored boat tours for groups with special needs. Our boat features a hydraulic ramp, making boarding and disembarking easy and safe for everyone.">Tarjoamme räätälöityjä veneretkiä erityisryhmille. Venellämme on hydraulinen ramppi, joka tekee veneeseen nousemisesta ja poistumisesta helppoa ja turvallista kaikille.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon" aria-hidden="true">♿</span>
+                        <h3 data-fi="Esteetön vene" data-en="Accessible Boat">Esteetön vene</h3>
+                        <p data-fi="Hydraulinen ramppi ja tilava kansi pyörätuolille." data-en="Hydraulic ramp and spacious deck for wheelchairs.">Hydraulinen ramppi ja tilava kansi pyörätuolille.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon" aria-hidden="true">🗺️</span>
+                        <h3 data-fi="Räätälöity reitti" data-en="Customized Route">Räätälöity reitti</h3>
+                        <p data-fi="Suunnittelemme reitin yhdessä toiveidesi mukaan." data-en="We plan the route together based on your wishes.">Suunnittelemme reitin yhdessä toiveidesi mukaan.</p>
+                    </div>
+
+                </div>
+
+                <!-- Gallery -->
+                <h3 class="gallery-heading" data-fi="Kuvia retkiltä" data-en="Tour Photos">Kuvia retkiltä</h3>
+                <div class="gallery-grid" role="group" aria-label="Erityisryhmien retkien kuvagalleria">
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/retki-vene-1.jpg" alt="Faster-vene ramppi avoinna satamassa" loading="lazy">
+                        <figcaption data-fi="Vene satamassa" data-en="Boat in harbour">Vene satamassa</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/retki-vene-2.jpg" alt="Vene saaristossa" loading="lazy">
+                        <figcaption data-fi="Saaristossa" data-en="In the archipelago">Saaristossa</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/retki-vene-3.jpg" alt="Vene rantautuneena saariston kalliolla" loading="lazy">
+                        <figcaption data-fi="Rantautuminen" data-en="Shoreline stop">Rantautuminen</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/retki-saaristo-1.jpg" alt="Saaristomaisema" loading="lazy">
+                        <figcaption data-fi="Saaristomaisema" data-en="Archipelago scenery">Saaristomaisema</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/retki-luonto-1.jpg" alt="Villiruusu saariston kalliolla" loading="lazy">
+                        <figcaption data-fi="Saariston kasveja" data-en="Island flora">Saariston kasveja</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/retki-luonto-2.jpg" alt="Maksaruoho saariston kalliolla" loading="lazy">
+                        <figcaption data-fi="Saariston yksityiskohtia" data-en="Archipelago details">Saariston yksityiskohtia</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Pricing info -->
+                <div class="info-card">
+                    <h3 data-fi="Hinnat ja varaukset" data-en="Pricing &amp; Bookings">Hinnat ja varaukset</h3>
+                    <p data-fi="Jokainen retki räätälöidään asiakkaan toiveiden mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä niin suunnitellaan juuri sinulle sopiva retki!" data-en="Every tour is tailored to the customer's wishes. Pricing depends on duration, route, and group size. Contact us and we'll plan the perfect trip for you!">Jokainen retki räätälöidään asiakkaan toiveiden mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä niin suunnitellaan juuri sinulle sopiva retki!</p>
+                    <a href="#contact" class="cta-button cta-button--small" data-fi="Kysy tarjous" data-en="Request a quote">Kysy tarjous</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Tours -->
+        <section id="photo-tours" class="section section--cream" aria-labelledby="photo-heading">
+            <div class="container">
+                <h2 id="photo-heading" data-fi="Valokuvausretket" data-en="Photography Tours">Valokuvausretket</h2>
+                <p class="section-intro" data-fi="Valokuvausretket on suunniteltu luonnon kuvaamiseen valokuvaajien ehdoilla. Etenemme valon, sään, vuodenaikojen ja kohteiden mukaan, jotta saat parhaat mahdolliset olosuhteet kuvaamiseen." data-en="Our photography tours are designed for nature photography on photographers' terms. We move according to light, weather, seasons, and subjects so you get the best possible conditions for shooting.">Valokuvausretket on suunniteltu luonnon kuvaamiseen valokuvaajien ehdoilla. Etenemme valon, sään, vuodenaikojen ja kohteiden mukaan, jotta saat parhaat mahdolliset olosuhteet kuvaamiseen.</p>
+
+                <div class="features-grid photo-features-grid">
+                    <article class="feature-card photo-feature-card">
+                        <div class="feature-media feature-media--photographers" role="img" aria-label="Kuva valokuvaajasta kameran kanssa veneessä aamuauringossa"></div>
+                        <div class="photo-feature-content">
+                            <h3 data-fi="Kuvaajien ehdoilla" data-en="Built Around Photographers">Kuvaajien ehdoilla</h3>
+                            <p data-fi="Retken rytmi määräytyy kuvaamisen tarpeiden mukaan, ei valmiin aikataulun ehdoilla." data-en="The pace of the tour follows photographic needs, not a fixed schedule.">Retken rytmi määräytyy kuvaamisen tarpeiden mukaan, ei valmiin aikataulun ehdoilla.</p>
+                        </div>
+                    </article>
+                    <article class="feature-card photo-feature-card">
+                        <div class="feature-media feature-media--light" role="img" aria-label="Kuva auringonlaskun valosta saariston yllä"></div>
+                        <div class="photo-feature-content">
+                            <h3 data-fi="Valon mukaan" data-en="Guided by Light">Valon mukaan</h3>
+                            <p data-fi="Hyödynnämme kultaisen tunnin, sään vaihtelut ja oikean kuvausajankohdan jokaisessa kohteessa." data-en="We make the most of golden hour, changing weather, and the right moment at each location.">Hyödynnämme kultaisen tunnin, sään vaihtelut ja oikean kuvausajankohdan jokaisessa kohteessa.</p>
+                        </div>
+                    </article>
+                    <article class="feature-card photo-feature-card">
+                        <div class="feature-media feature-media--nature" role="img" aria-label="Kuva merikotkasta saariston yllä"></div>
+                        <div class="photo-feature-content">
+                            <h3 data-fi="Luonnon kohteet" data-en="Natural Subjects">Luonnon kohteet</h3>
+                            <p data-fi="Kuvauskohteina voivat olla esimerkiksi linnut, hylkeet, merimaisemat ja saariston yksityiskohdat." data-en="Subjects can include birds, seals, seascapes, and the finer details of the archipelago.">Kuvauskohteina voivat olla esimerkiksi linnut, hylkeet, merimaisemat ja saariston yksityiskohdat.</p>
+                        </div>
+                    </article>
+                    <article class="feature-card photo-feature-card">
+                        <div class="feature-media feature-media--focus" role="img" aria-label="Kuva rauhallisesta kuvaushetkestä merellä"></div>
+                        <div class="photo-feature-content">
+                            <h3 data-fi="Rauha keskittyä" data-en="Room to Focus">Rauha keskittyä</h3>
+                            <p data-fi="Retki toteutetaan rauhallisesti, jotta voit keskittyä sommitteluun, odottamiseen ja oikean hetken löytämiseen." data-en="The tour is carried out at a calm pace so you can focus on composition, patience, and catching the right moment.">Retki toteutetaan rauhallisesti, jotta voit keskittyä sommitteluun, odottamiseen ja oikean hetken löytämiseen.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Gallery -->
+                <h3 class="gallery-heading" data-fi="Kuvia retkiltä" data-en="Tour Photos">Kuvia retkiltä</h3>
+                <div class="gallery-grid" role="group" aria-label="Valokuvausretkien kuvagalleria">
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/luonto-merikotka.jpg" alt="Nuori harmaahylje kalliolla" loading="lazy">
+                        <figcaption data-fi="Nuori harmaahylje" data-en="Young grey seal">Nuori harmaahylje</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/luonto-hylkeet.jpg" alt="Hylkeitä auringonlaskun valossa" loading="lazy">
+                        <figcaption data-fi="Hylkeitä auringonlaskussa" data-en="Seals at sunset">Hylkeitä auringonlaskussa</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/luonto-telkka.jpg" alt="Telkkä vedessä" loading="lazy">
+                        <figcaption data-fi="Telkkä" data-en="Goldeneye">Telkkä</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/luonto-kotka-saalis.jpg" alt="Merikotka saaliineen lennossa" loading="lazy">
+                        <figcaption data-fi="Merikotka saaliineen" data-en="Eagle with prey">Merikotka saaliineen</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/luonto-joutsen.jpg" alt="Joutsen pesällä" loading="lazy">
+                        <figcaption data-fi="Joutsen pesällä" data-en="Swan nesting">Joutsen pesällä</figcaption>
+                    </figure>
+                    <figure class="image-placeholder gallery-item">
+                        <img src="kuvat/luonto-hylje.jpg" alt="Harmaahylje lähikuvassa" loading="lazy">
+                        <figcaption data-fi="Harmaahylje" data-en="Grey seal">Harmaahylje</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Pricing info -->
+                <div class="info-card">
+                    <h3 data-fi="Hinnat ja varaukset" data-en="Pricing &amp; Bookings">Hinnat ja varaukset</h3>
+                    <p data-fi="Valokuvausretki räätälöidään kuvauskohteiden, toiveidesi ja olosuhteiden mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä ja kerro, mitä haluat kuvata luonnossa." data-en="Each photography tour is tailored to your subjects, preferences, and the conditions. Pricing depends on duration, route, and group size. Get in touch and tell us what you want to photograph in nature.">Valokuvausretki räätälöidään kuvauskohteiden, toiveidesi ja olosuhteiden mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä ja kerro, mitä haluat kuvata luonnossa.</p>
+                    <a href="#contact" class="cta-button cta-button--small" data-fi="Kysy tarjous" data-en="Request a quote">Kysy tarjous</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section--white" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</h2>
+                <p class="section-intro" data-fi="Ota yhteyttä ja suunnitellaan sinulle unelmaretki saaristoon!" data-en="Get in touch and let's plan your dream trip to the archipelago!">Ota yhteyttä ja suunnitellaan sinulle unelmaretki saaristoon!</p>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <span class="contact-icon" aria-hidden="true">✉️</span>
+                        <h3 data-fi="Sähköposti" data-en="Email">Sähköposti</h3>
+                        <a href="mailto:info@accessiblearchipelago.com">info@accessiblearchipelago.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon" aria-hidden="true">📷</span>
+                        <h3 data-fi="Instagram" data-en="Instagram">Instagram</h3>
+                        <a href="https://instagram.com/accessiblearchipelago" target="_blank" rel="noopener noreferrer">@accessiblearchipelago</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>Contact us at <a href="mailto:info@accessiblearchipelago.fi">info@accessiblearchipelago.fi</a></p>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="kuvat/logo.png" alt="" class="footer-logo" width="50" height="50" aria-hidden="true">
+                    <p>Accessible Archipelago</p>
+                    <p class="footer-tagline" data-fi="Turun saaristoretket" data-en="Turku Archipelago Tours">Turun saaristoretket</p>
+                </div>
+                <nav class="footer-nav" aria-label="Alatunnisteen navigaatio">
+                    <ul role="list">
+                        <li><a href="#about" data-fi="Tietoa meistä" data-en="About Us">Tietoa meistä</a></li>
+                        <li><a href="#special-tours" data-fi="Erityisryhmien retket" data-en="Accessible Tours">Erityisryhmien retket</a></li>
+                        <li><a href="#photo-tours" data-fi="Valokuvausretket" data-en="Photography Tours">Valokuvausretket</a></li>
+                        <li><a href="#contact" data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="mailto:info@accessiblearchipelago.com" aria-label="Sähköposti">✉️</a>
+                    <a href="https://instagram.com/accessiblearchipelago" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Accessible Archipelago. <span data-fi="Kaikki oikeudet pidätetään." data-en="All rights reserved.">Kaikki oikeudet pidätetään.</span></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Language toggle + mobile nav script -->
+    <script>
+    (function() {
+        'use strict';
+
+        // --- Language Toggle ---
+        var currentLang = localStorage.getItem('aa-lang') || 'fi';
+        var toggleBtn = document.getElementById('lang-toggle');
+        var htmlEl = document.documentElement;
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            htmlEl.setAttribute('lang', lang);
+            localStorage.setItem('aa-lang', lang);
+
+            // Update all bilingual text elements
+            var elements = document.querySelectorAll('[data-fi][data-en]');
+            for (var i = 0; i < elements.length; i++) {
+                var el = elements[i];
+                el.textContent = el.getAttribute('data-' + lang);
+            }
+
+            // Update lang toggle active state
+            var langOptions = toggleBtn.querySelectorAll('.lang-option');
+            for (var j = 0; j < langOptions.length; j++) {
+                var opt = langOptions[j];
+                if (opt.getAttribute('data-lang') === lang) {
+                    opt.setAttribute('aria-current', 'true');
+                    opt.classList.add('active');
+                } else {
+                    opt.removeAttribute('aria-current');
+                    opt.classList.remove('active');
+                }
+            }
+
+            // Update toggle button aria-label
+            toggleBtn.setAttribute('aria-label',
+                lang === 'fi' ? 'Switch to English' : 'Vaihda suomeksi'
+            );
+
+            // Update nav toggle aria-label
+            var navToggle = document.querySelector('.nav-toggle');
+            if (navToggle) {
+                var isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                if (lang === 'fi') {
+                    navToggle.setAttribute('aria-label', isExpanded ? 'Sulje valikko' : 'Avaa valikko');
+                } else {
+                    navToggle.setAttribute('aria-label', isExpanded ? 'Close menu' : 'Open menu');
+                }
+            }
+
+            // Update page title
+            document.title = lang === 'fi'
+                ? 'Accessible Archipelago — Turun saaristoretket'
+                : 'Accessible Archipelago — Turku Archipelago Tours';
+        }
+
+        // Toggle on click
+        toggleBtn.addEventListener('click', function() {
+            setLanguage(currentLang === 'fi' ? 'en' : 'fi');
+        });
+
+        // Apply saved language on load
+        if (currentLang !== 'fi') {
+            setLanguage(currentLang);
+        }
+
+        // --- Mobile Nav Toggle ---
+        var navToggle = document.querySelector('.nav-toggle');
+        var navList = document.getElementById('nav-list');
+
+        navToggle.addEventListener('click', function() {
+            var expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navList.classList.toggle('nav-open');
+
+            if (currentLang === 'fi') {
+                navToggle.setAttribute('aria-label', expanded ? 'Avaa valikko' : 'Sulje valikko');
+            } else {
+                navToggle.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');
+            }
+        });
+
+        // Close nav on link click (mobile)
+        var navLinks = navList.querySelectorAll('a');
+        for (var k = 0; k < navLinks.length; k++) {
+            navLinks[k].addEventListener('click', function() {
+                navToggle.setAttribute('aria-expanded', 'false');
+                navList.classList.remove('nav-open');
+                if (currentLang === 'fi') {
+                    navToggle.setAttribute('aria-label', 'Avaa valikko');
+                } else {
+                    navToggle.setAttribute('aria-label', 'Open menu');
+                }
+            });
+        }
+    })();
+    </script>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Kuvan suurennus" hidden>
+        <button class="lightbox-close" aria-label="Sulje">&times;</button>
+        <button class="lightbox-prev" aria-label="Edellinen">&#10094;</button>
+        <button class="lightbox-next" aria-label="Seuraava">&#10095;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <script>
+    (function() {
+        'use strict';
+        var lightbox = document.getElementById('lightbox');
+        var lbImg = document.getElementById('lightbox-img');
+        var lbCaption = document.getElementById('lightbox-caption');
+        var images = [];
+        var currentIndex = 0;
+
+        // Collect all gallery images
+        var galleryImgs = document.querySelectorAll('.gallery-item img, .image-placeholder img');
+        for (var i = 0; i < galleryImgs.length; i++) {
+            (function(idx) {
+                var img = galleryImgs[idx];
+                var figure = img.closest('figure');
+                var caption = figure ? figure.querySelector('figcaption') : null;
+                images.push({ src: img.src, alt: img.alt, caption: caption ? caption.textContent : '' });
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    openLightbox(idx);
+                });
+            })(i);
+        }
+
+        function openLightbox(idx) {
+            currentIndex = idx;
+            showImage();
+            lightbox.hidden = false;
+            document.body.style.overflow = 'hidden';
+            lightbox.querySelector('.lightbox-close').focus();
+        }
+
+        function closeLightbox() {
+            lightbox.hidden = true;
+            document.body.style.overflow = '';
+        }
+
+        function showImage() {
+            var item = images[currentIndex];
+            lbImg.src = item.src;
+            lbImg.alt = item.alt;
+            lbCaption.textContent = item.caption;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage();
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage();
+        }
+
+        lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+        lightbox.querySelector('.lightbox-next').addEventListener('click', nextImage);
+        lightbox.querySelector('.lightbox-prev').addEventListener('click', prevImage);
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (lightbox.hidden) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
+        });
+    })();
+    </script>
+
 </body>
 </html>
