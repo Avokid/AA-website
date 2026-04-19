@@ -676,9 +676,9 @@ ul {
 }
 
 .contact-card a {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     font-weight: 600;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 /* ============================================
