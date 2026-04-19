@@ -1,49 +1,43 @@
-# Archipelago Adventures Website
+# Accessible Archipelago
 
-A static website for boat trip services in the Turku archipelago, Finland.
+**Saavutettavat saaristoretket Turun saaristossa**
 
-## Services
+Accessible Archipelago tarjoaa saavutettavia veneretkiä Turun upeassa saaristossa. Venellämme on hydraulinen ramppi, joka mahdollistaa helpon ja turvallisen pääsyn kaikille — myös pyörätuolin käyttäjille ja liikuntarajoitteisille.
 
-- **Fishing Trips**: Exclusive fishing expeditions for special groups in the pristine waters of the Turku archipelago
-- **Seal Photography Tours**: Specialized tours for nature photographers to capture seals in their natural habitat
+---
 
-## Deployment to Google Cloud Storage
+## Erityisryhmien retket
 
-To deploy this static website to Google Cloud Storage:
+Tarjoamme räätälöityjä veneretkiä erityisryhmille. Esteetön veneemme, tilava kansi ja kokenut kapteeni takaavat turvallisen ja mieleenpainuvan retken jokaiselle.
 
-1. Create a Google Cloud Storage bucket:
-```bash
-gsutil mb gs://your-bucket-name
-```
+Suunnittelemme reitin yhdessä toiveidesi mukaan — jokainen retki on ainutlaatuinen.
 
-2. Make the bucket publicly readable:
-```bash
-gsutil iam ch allUsers:objectViewer gs://your-bucket-name
-```
+## Valokuvausretket
 
-3. Configure the bucket for website hosting:
-```bash
-gsutil web set -m index.html -e index.html gs://your-bucket-name
-```
+Valokuvausretket on suunniteltu luonnon kuvaamiseen valokuvaajien ehdoilla. Etenemme valon, sään, vuodenaikojen ja kohteiden mukaan, jotta saat parhaat mahdolliset olosuhteet kuvaamiseen. Kohteina muun muassa linnut, hylkeet ja saariston henkeäsalpaavat maisemat.
 
-4. Upload the files:
-```bash
-gsutil -m cp -r index.html styles.css gs://your-bucket-name
-```
+## Kalastusretket
 
-5. Access your website at:
-```
-http://your-bucket-name.storage.googleapis.com
-```
+Kalastusretkiä Turun saaristoon — rauha, luonto ja elämykset merellä.
 
-## Local Development
+---
 
-To test locally:
-```bash
-python3 -m http.server 8080
-```
+## Yhteystiedot
 
-Then open http://localhost:8080 in your browser.
+📍 Turun saaristo · Kausi: kevät, kesä ja syksy
+
+🌐 [accessiblearchipelago.com](https://accessiblearchipelago.com)
+
+Ota yhteyttä niin suunnitellaan juuri sinulle sopiva retki!
+- Sähköposti: info@accessiblearchipelago.fi
+
+### Brändi ja sävy
+
+- **Lämminhenkinen, haaveileva, pehmeä, iloinen**
+- Esteettömyys ja inklusiivisuus ovat ydinarvoja
+- Luonto ja saaristo ovat keskiössä – kunnioitus meriympäristöä kohtaan
+- Teksteissä saa näkyä rakkaus mereen ja saaristoon
+- Kutsutaan lukijaa unelmoimaan ja kokemaan
 
 ## Features
 
