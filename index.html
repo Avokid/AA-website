@@ -50,7 +50,7 @@
             <img src="kuvat/logo.png" alt="" class="hero-logo" width="200" height="200" aria-hidden="true">
             <h1 id="hero-heading">Accessible Archipelago</h1>
             <p class="hero-tagline" data-fi="Saavutettavat saaristoretket Turun saaristossa" data-en="Accessible boat tours in the Turku Archipelago">Saavutettavat saaristoretket Turun saaristossa</p>
-            <p class="hero-subtitle" data-fi="Erityisryhmien retket &amp; valokuvausretket — kaikille avoin saaristo" data-en="Accessible tours &amp; photography tours — the archipelago for everyone">Erityisryhmien retket &amp; valokuvausretket — kaikille avoin saaristo</p>
+            <p class="hero-subtitle" data-fi="Erityisryhmien retket ja valokuvausretket — saaristo kuuluu kaikille" data-en="Accessible tours &amp; photography tours — the archipelago for everyone">Erityisryhmien retket ja valokuvausretket — saaristo kuuluu kaikille</p>
             <a href="#contact" class="cta-button" data-fi="Ota yhteyttä" data-en="Get in touch">Ota yhteyttä</a>
         </div>
     </section>
@@ -65,7 +65,7 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p data-fi="Accessible Archipelago tarjoaa saavutettavia veneretkiä Turun upeassa saaristossa. Venellämme on ramppi, joka mahdollistaa helpon pääsyn kaikille — myös pyörätuolin käyttäjille ja liikuntarajoitteisille." data-en="Accessible Archipelago offers accessible boat tours in the stunning Turku Archipelago. Our boat features a ramp that provides easy access for everyone — including wheelchair users and people with mobility challenges.">Accessible Archipelago tarjoaa saavutettavia veneretkiä Turun upeassa saaristossa. Venellämme on ramppi, joka mahdollistaa helpon pääsyn kaikille — myös pyörätuolin käyttäjille ja liikuntarajoitteisille.</p>
-                        <p data-fi="Vene tulee sinne, minne sinä haluat. Suunnittelemme reitin yhdessä toiveidesi mukaan. Saaristomme tarjoaa ainutlaatuisia luontokokemuksia, hiljaisia lahtia ja henkeäsalpaavia maisemia." data-en="The boat comes to you — wherever you want. We plan the route together based on your wishes. Our archipelago offers unique nature experiences, tranquil bays, and breathtaking scenery.">Vene tulee sinne, minne sinä haluat. Suunnittelemme reitin yhdessä toiveidesi mukaan. Saaristomme tarjoaa ainutlaatuisia luontokokemuksia, hiljaisia lahtia ja henkeäsalpaavia maisemia.</p>
+                        <p data-fi="Vene vie sinut sinne, minne haluat. Suunnittelemme reitin yhdessä toiveidesi mukaan. Saaristo tarjoaa ainutlaatuisia luontokokemuksia, hiljaisia lahtia ja henkeäsalpaavia maisemia." data-en="The boat comes to you — wherever you want. We plan the route together based on your wishes. Our archipelago offers unique nature experiences, tranquil bays, and breathtaking scenery.">Vene vie sinut sinne, minne haluat. Suunnittelemme reitin yhdessä toiveidesi mukaan. Saaristo tarjoaa ainutlaatuisia luontokokemuksia, hiljaisia lahtia ja henkeäsalpaavia maisemia.</p>
                     </div>
                     <div class="about-gallery">
                         <figure class="image-placeholder">
@@ -117,8 +117,8 @@
                         <figcaption data-fi="Saaristossa" data-en="In the archipelago">Saaristossa</figcaption>
                     </figure>
                     <figure class="image-placeholder gallery-item">
-                        <img src="kuvat/retki-vene-3.jpg" alt="Vene rantautuneena saariston kalliolla" loading="lazy">
-                        <figcaption data-fi="Rantautuminen" data-en="Shoreline stop">Rantautuminen</figcaption>
+                        <img src="kuvat/esteetoen-paasy.jpg" alt="Vene rannassa hydraulinen ramppi laskettuna" loading="lazy">
+                        <figcaption data-fi="Rannassa" data-en="At the shore">Rannassa</figcaption>
                     </figure>
                     <figure class="image-placeholder gallery-item">
                         <img src="kuvat/retki-saaristo-1.jpg" alt="Saaristomaisema" loading="lazy">
@@ -137,7 +137,7 @@
                 <!-- Pricing info -->
                 <div class="info-card">
                     <h3 data-fi="Hinnat ja varaukset" data-en="Pricing &amp; Bookings">Hinnat ja varaukset</h3>
-                    <p data-fi="Jokainen retki räätälöidään asiakkaan toiveiden mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä niin suunnitellaan juuri sinulle sopiva retki!" data-en="Every tour is tailored to the customer's wishes. Pricing depends on duration, route, and group size. Contact us and we'll plan the perfect trip for you!">Jokainen retki räätälöidään asiakkaan toiveiden mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä niin suunnitellaan juuri sinulle sopiva retki!</p>
+                    <p data-fi="Jokainen retki räätälöidään toiveidesi mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä, niin suunnitellaan juuri sinulle sopiva retki." data-en="Every tour is tailored to the customer's wishes. Pricing depends on duration, route, and group size. Contact us and we'll plan the perfect trip for you!">Jokainen retki räätälöidään toiveidesi mukaan. Hinta riippuu retken kestosta, reitistä ja ryhmän koosta. Ota yhteyttä, niin suunnitellaan juuri sinulle sopiva retki.</p>
                     <a href="#contact" class="cta-button cta-button--small" data-fi="Kysy tarjous" data-en="Request a quote">Kysy tarjous</a>
                 </div>
             </div>
@@ -373,7 +373,6 @@
         <button class="lightbox-prev" aria-label="Edellinen">&#10094;</button>
         <button class="lightbox-next" aria-label="Seuraava">&#10095;</button>
         <img class="lightbox-img" id="lightbox-img" src="" alt="">
-        <p class="lightbox-caption" id="lightbox-caption"></p>
     </div>
 
     <script>
@@ -381,7 +380,6 @@
         'use strict';
         var lightbox = document.getElementById('lightbox');
         var lbImg = document.getElementById('lightbox-img');
-        var lbCaption = document.getElementById('lightbox-caption');
         var images = [];
         var currentIndex = 0;
 
@@ -392,7 +390,7 @@
                 var img = galleryImgs[idx];
                 var figure = img.closest('figure');
                 var caption = figure ? figure.querySelector('figcaption') : null;
-                images.push({ src: img.src, alt: img.alt, caption: caption ? caption.textContent : '' });
+                images.push({ src: img.src, alt: img.alt });
                 img.style.cursor = 'pointer';
                 img.addEventListener('click', function() {
                     openLightbox(idx);
@@ -417,7 +415,6 @@
             var item = images[currentIndex];
             lbImg.src = item.src;
             lbImg.alt = item.alt;
-            lbCaption.textContent = item.caption;
         }
 
         function nextImage() {
